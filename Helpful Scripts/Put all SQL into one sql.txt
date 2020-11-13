@@ -1,0 +1,1 @@
+type *.sql > allSql.sql
