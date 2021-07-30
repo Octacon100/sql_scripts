@@ -31,7 +31,7 @@ FROM        #sp_who2 w
 OUTER APPLY sys.dm_exec_input_buffer(w.SPID, NULL) 
 -- Add any filtering of the results here :
 WHERE       1=1
---AND DBName = 'CFN_Security'
+AND login = 'ALPHASIMPLEX\nlow' --AND DBName = 'CFN_Security'
 AND BlkBy <> '  .'
 OR SPID IN
 (
